@@ -1,0 +1,45 @@
+p {
+    animation: fadeInUp 1s ease;
+    color: darkslategray;
+  }
+/* Animación local para el hijo */
+@keyframes fadeInUpChild {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estilo del mensaje */
+p {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  color: #444;
+  animation: fadeInUpChild 0.7s ease-out;
+}
+
+/* Estilo del botón +1 */
+button {
+  background-color: #009688;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 150, 136, 0.3);
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #00796b;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: scale(0.96);
+}
